@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/padding.css">
+    <link rel="stylesheet" href="css/margin.css">
+    <link rel="stylesheet" href="css/column.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/border.css">
+    <link rel="stylesheet" href="css/position.css">
+    <link rel="stylesheet" href="css/image.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-[url('img/slider-image3.jpg')] bg-cover bg-center text-white py-20">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Eatery <span class="text-red">.</span>cafe</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Home
+          </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Chef
+          </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contact
+          </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Call now! +99365656565
+          </a>
+          <form class="pl-3">
+            <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+          </form>
+        </div>
+      </nav>
+  <div class="container mx-auto text-center">
+    <h1 class="text-4xl font-bold">Enjoy our special menus every Sunday and Friday</h1>
+    <button class="mt-5 bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/80">Discover more</button>
+  </div>
+</div>
+<div class="bg-white py-20">
+  <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold">We've Been Making The Delicious Foods Since 1999</h2>
+    <p class="mt-5 text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+    <p class="mt-5 text-muted-foreground">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.</p>
+    <img src="img/about-image.jpg" alt="Chef with food" class="mt-10 mx-auto rounded-lg shadow-lg">
+  </div>
+</div>
+<div class="bg-zinc-100 py-20">
+  <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold">Meet our chefs</h2>
+    <p class="mt-2 text-muted-foreground">The people who make the magic happen</p>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-white p-5 rounded-lg shadow-lg">
+        <img src="img/team-image1.jpg" alt="Chef New Catherine" class="w-full rounded-lg">
+        <h3 class="mt-5 text-xl font-bold">New Catherine</h3>
+        <p class="text-muted-foreground">Pastry Chef</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-lg">
+        <img src="img/team-image2.jpg" alt="Chef Lindsay Perlen" class="w-full rounded-lg">
+        <h3 class="mt-5 text-xl font-bold">Lindsay Perlen</h3>
+        <p class="text-muted-foreground">Executive Chef</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg shadow-lg">
+        <img src="img/team-image3.jpg" alt="Chef Isabella Grace" class="w-full rounded-lg">
+        <h3 class="mt-5 text-xl font-bold">Isabella Grace</h3>
+        <p class="text-muted-foreground">Sous Chef</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-white py-20">
+  <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold">Our Menus</h2>
+    <p class="mt-2 text-muted-foreground">The best dishes we offer</p>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <img src="img/menu-image1.jpg" alt="Dish 1" class="w-full rounded-lg shadow-lg">
+      <img src="img/menu-image2.jpg" alt="Dish 2" class="w-full rounded-lg shadow-lg">
+      <img src="img/menu-image3.jpg" alt="Dish 3" class="w-full rounded-lg shadow-lg">
+      <img src="img/menu-image4.jpg" alt="Dish 4" class="w-full rounded-lg shadow-lg">
+      <img src="img/menu-image5.jpg" alt="Dish 5" class="w-full rounded-lg shadow-lg">
+      <img src="img/menu-image6.jpg" alt="Dish 6" class="w-full rounded-lg shadow-lg">
+    </div>
+  </div>
+</div>
+<div class="bg-[url('img/testimonial-bg.jpg')] bg-cover bg-center text-white py-20">
+  <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold">Testimonials</h2>
+    <p class="mt-5 text-muted-foreground">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta lorem nec consectetur porta. Vestibulum et elit at risus tincidunt mollis."</p>
+    <p class="mt-2 text-muted-foreground">- Jane Doe</p>
+  </div>
+</div>
+  </body>
+</html>
